@@ -6,7 +6,7 @@ Wikifier is a tool to annotate documents based on wikipedia concepts.<br>
 
 ## Steps to generate data corpus for the wikifier:
 1. After processing the XML dump using Wikiextractor, run the `notebooks/Attardi Output Data Processor.ipynb` or `corpus_code/AttardiOutputDataProcessor.py` to generate intermediate data `corpus/source_target_anchor.csv` which will be roughly of size 12GB.
-2. Now run `notebooks/Wikifier Corpus Builder.ipynb` or `corpus_code/WikifierCorpusBuilder.py` to generate the corpus dataset `corpus/["anchor-id","concept-id", "concept-concepts", "anchor-concepts", "anchor-entropy"]` each roughly having size between 150 MB - 700MB
+2. Now run `notebooks/Wikifier Corpus Builder.ipynb` or `corpus_code/WikifierCorpusBuilder.py` to generate the corpus dataset `corpus/[anchor-id.csv, concept-id.csv, concept-concepts.csv, anchor-concepts.csv, anchor-entropy.csv]` each roughly having size between 150 MB - 700MB
 3. The `corpus/source_target_anchor.csv` is no longer required and can be deleted if needed.
 
 ## Running the Wikifier:
